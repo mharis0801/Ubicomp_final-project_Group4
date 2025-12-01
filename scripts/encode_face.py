@@ -20,8 +20,8 @@ from pathlib import Path
 # Add parent directory to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-import smart_door_camera.config as config
-from smart_door_camera.face_recognition import FaceRecognizer
+import config as config
+from face_recognition import FaceRecognizer
 
 
 def main():

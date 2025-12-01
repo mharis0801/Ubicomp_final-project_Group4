@@ -15,7 +15,7 @@ import shutil
 from pathlib import Path
 from datetime import datetime, timedelta
 
-import smart_door_camera.config as config
+import config as config
 
 
 def setup_logging():

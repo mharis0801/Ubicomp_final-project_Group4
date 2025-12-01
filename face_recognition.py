@@ -38,7 +38,7 @@ class FaceRecognizer:
     def _load_library(self):
         """Load face_recognition library"""
         try:
-            import smart_door_camera.face_recognition as face_recognition
+            import face_recognition as face_recognition
             self.face_recognition = face_recognition
             logger.info("✅ face_recognition library loaded")
         except ImportError:
@@ -158,7 +158,7 @@ class FaceRecognizer:
             )
         """
         try:
-            import smart_door_camera.face_recognition as face_recognition
+            import face_recognition as face_recognition
         except ImportError:
             logger.error("face_recognition not installed")
             logger.error("Install with: pip install face-recognition")

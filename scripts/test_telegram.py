@@ -14,8 +14,8 @@ from pathlib import Path
 # Add parent directory to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-import smart_door_camera.config as config
-from smart_door_camera.notification import TelegramNotifier
+import config as config
+from notification import TelegramNotifier
 import asyncio
 
 
