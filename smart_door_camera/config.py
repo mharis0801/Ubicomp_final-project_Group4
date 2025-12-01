@@ -11,8 +11,8 @@ from pathlib import Path
 
 # ==================== TELEGRAM CONFIG ====================
 # Get these from Telegram @BotFather and @userinfobot
-TELEGRAM_BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"     # Replace with your bot token
-TELEGRAM_USER_ID = "YOUR_USER_ID_HERE"        # Replace with your user ID
+TELEGRAM_BOT_TOKEN = "8263669951:AAH7Zdpm_0YX_rsNGTbF5v801_9VbqITe3M"     # Replace with your bot token
+TELEGRAM_USER_ID = "1042611352"        # Replace with your user ID
 TELEGRAM_CHANNEL_ID = "@rpi5doorcam"          # Optional: for persistent alerts
 
 # ==================== DETECTION CONFIG ====================
