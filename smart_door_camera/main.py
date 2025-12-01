@@ -23,9 +23,9 @@ import time
 import signal
 import sys
 
-import config
-from notification import send_detection_sync, send_startup_sync, send_error_sync
-from utils import setup_logging, cleanup_old_images, save_detection_csv, validate_config
+import smart_door_camera.config as config
+from smart_door_camera.notification import send_detection_sync, send_startup_sync, send_error_sync
+from smart_door_camera.utils import setup_logging, cleanup_old_images, save_detection_csv, validate_config
 
 # Initialize logging
 setup_logging()
@@ -33,7 +33,7 @@ logger = logging.getLogger(__name__)
 
 # Import face recognizer if available
 try:
-    from face_recognition import FaceRecognizer
+    from smart_door_camera.face_recognition import FaceRecognizer
     FACE_RECOGNITION_AVAILABLE = True
 except ImportError:
     FACE_RECOGNITION_AVAILABLE = False

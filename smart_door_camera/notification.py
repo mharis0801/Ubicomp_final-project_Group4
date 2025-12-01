@@ -16,7 +16,7 @@ from pathlib import Path
 from telegram import Bot
 from telegram.error import TelegramError
 
-import config
+import smart_door_camera.config as config
 
 # Setup logging
 logging.basicConfig(level=logging.INFO)
