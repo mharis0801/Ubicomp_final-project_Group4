@@ -1,0 +1,12 @@
+ultralytics>=8.0.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+pillow>=10.0.0
+python-telegram-bot>=20.0
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# Optional packages (uncomment if needed)
+# face-recognition>=1.3.0  # For face recognition feature
+# dlib>=19.24.0           # Required by face-recognition

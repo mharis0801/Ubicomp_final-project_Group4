@@ -1,0 +1,33 @@
+[Unit]
+Description=Smart Door Camera System - RPi 5
+After=network.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/smart_door_camera
+Environment="PATH=/home/pi/smart_door_camera/venv/bin"
+ExecStart=/home/pi/smart_door_camera/venv/bin/python3 main.py
+
+# Auto-restart on failure
+Restart=always
+RestartSec=10
+
+# Keep running even if it crashes
+StartLimitInterval=0
+StartLimitBurst=0
+
+# Logging
+StandardOutput=inherit
+StandardError=inherit
+
+# Cleanup
+KillMode=process
+
+# Resource limits (optional)
+CPUQuota=80%
+MemoryMax=500M
+
+[Install]
+WantedBy=multi-user.target
